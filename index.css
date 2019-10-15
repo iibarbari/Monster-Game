@@ -1,0 +1,54 @@
+#app .container .row {
+  padding: 1.5rem 0;
+}
+
+#app .container .row [class^="col"] {
+  text-align: center;
+}
+
+#app .container .row [class^="col"] .healthbar {
+  width: 100%;
+  position: relative;
+  background: #ddd;
+  height: 30px;
+}
+
+#app .container .row [class^="col"] .healthbar .loaded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: purple;
+  opacity: 0.4;
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+#app .container .row.log ul li {
+  list-style-type: none;
+  color: white;
+  padding: 10px 0;
+  opacity: 0.4;
+  margin: 5px 0;
+}
+
+#app .container .row.log ul li.player {
+  background: purple;
+}
+
+#app .container .row.log ul li.monster {
+  background: salmon;
+}
+/*# sourceMappingURL=index.css.map */
